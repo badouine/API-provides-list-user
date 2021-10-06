@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 
-axios.defaults.baseURL = 'https://jsonplaceholder.typicode.com/users';
+axios.defaults.baseURL = 'https://jsonplaceholder.typicode.co';
 
 const UserList = ({ url, method, body = null, headers = null }) => {
     const [response, setResponse] = useState(null);
