@@ -28,7 +28,18 @@ const App = () => {
      
     <h1>Users list</h1>
 
-   
+    {loading ? (
+        <p>loading...</p>
+    ) : (
+        <div>
+            {error && (
+                <div>
+                    <p>{error.message}</p>
+                </div>
+            )}
+            <div>{data && <p>{data.id}</p>}</div>
+        </div>
+    )}
 </div>
   );
 };
